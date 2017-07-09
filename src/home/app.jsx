@@ -41,7 +41,7 @@ class App extends React.Component {
         }else if(!that.validateEmail(data.email)){
             that.createNotification('error', 'Invalid E-mail address.');
         }else{
-              axios.get('http://localhost:3000/register', { //Change this web address to where you want it to go
+              axios.get('http://imarkett.com/register', { //Change this web address to where you want it to go
                 params: {
                     name: data.name,
                     email: data.email

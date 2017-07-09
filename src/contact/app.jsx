@@ -45,7 +45,7 @@ class App extends React.Component {
         }else if(!that.validateEmail(email)){
             that.createNotification('error', 'Invalid E-mail address.');
         }else{
-              axios.get('http://localhost:3000/contact-req', {
+              axios.get('http://imarkett.com/contact-req', {
                 params: {
                     name: name,
                     lastn: lastn,
